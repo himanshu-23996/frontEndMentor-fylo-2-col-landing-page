@@ -6,7 +6,7 @@
 - Use Responsive Sizing on logo and the images used
 - Use form tag for email box
 - Use auto or fr on grid units
-
+-All fonts are opensans except the header top bar, main section heading and the footer title
 
 
 
@@ -22,20 +22,19 @@
     - Logo
     - Links on right:use (flex:30%) or something like that for its width
       - For them use flex, space-evenly justified and centrally aligned
-      - 
-- Main
-  - Two similar sections, followed by one different section
-    - For Similar section 1 
+  - For the title section
       - Mobile: rowed, image on top (column reversed) followed by text pane
       - Desktop:
         - Right-image dynamically sized
         - Left Pane: Title,para,Email form
-    - For Similar Section 2:
+- Main
+  - Two sections
+    - For Section 1:
        -  Mobile: rowed, image on top (column reversed) followed by text pane
        -  Desktop:
         - Right-image dynamically sized
         - Left Pane: Title,link,testimonial
-    - For Section 3
+    - For Section 2
       - Desktop : Grided
         - Left : h3, para
         - Right : Email form
