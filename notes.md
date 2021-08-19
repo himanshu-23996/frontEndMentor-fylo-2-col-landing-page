@@ -5,6 +5,7 @@
 - Use Clamped Font
 - Use Responsive Sizing on logo and the images used
 - Use form tag for email box
+- Use auto or fr on grid units
 
 
 
