@@ -7,7 +7,9 @@
         align-items: center;
         justify-content: space-between;
         // Child Elements
-        &__logo-link {}
+        &__logo-link {
+            .logo-image {}
+        }
         &__header-links-holder {
             &__header-link {}
         }
