@@ -1,0 +1,13 @@
+{
+    "liveSassCompile.settings.includeItems": [
+        "./scss/main.scss",
+    ],
+    "liveSassCompile.settings.excludeList": [
+
+        "**/node_modules/**",
+        ".vscode/**",
+        "scss/util/*.scss",
+        "scss/globals/*.scss",
+        "scss/components/*.scss"
+    ]
+}
