@@ -1,11 +1,12 @@
 @use '../util' as *;
+// Helper Classes
 .container {
     // Centering Contents
     margin: 0 auto;
     // Mobile Design
     padding: 0 rem(25);
     @include breakpoint(large) {
-        padding: 0;
+        padding: 0 rem(75);
     }
     // Desktop Design
     width: rem(1285);
