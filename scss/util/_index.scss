@@ -1,4 +1,4 @@
-@forward './breakpoints.scss';
-@forward './functions.scss';
-@forward './colors.scss';
-@forward './fonts.scss';
+@import './breakpoints';
+@import './colors';
+@import './functions';
+@import './fonts';

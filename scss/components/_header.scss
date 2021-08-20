@@ -1,4 +1,4 @@
-@use '../util' as *;
+@import '../util/index';
 .header {
     // Child Elements
     &__top-bar {
