@@ -1,0 +1,25 @@
+.main {
+    .stay-productive {
+        &__image {}
+        &__text {
+            &__title {}
+            &__description-1 {}
+            &__description-2 {}
+            &__link-holder {
+                &__link {
+                    &__text {}
+                    &__icon {}
+                }
+            }
+        }
+        &__testimonial {
+            &__quote-icon {}
+            &__testimonial-content {}
+            &__display-profile {
+                &__image {}
+                &__name {}
+                &__designation {}
+            }
+        }
+    }
+}

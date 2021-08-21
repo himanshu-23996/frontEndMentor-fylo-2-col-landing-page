@@ -3,3 +3,8 @@ a:active,
 a:visited {
     text-decoration: none;
 }
+
+input,
+button {
+    all: unset;
+}

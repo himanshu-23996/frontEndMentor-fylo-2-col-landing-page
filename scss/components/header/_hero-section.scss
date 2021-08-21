@@ -15,7 +15,10 @@
         &__text {
             &__title {}
             &__description {}
-            &__mail-submission-form {}
+        }
+        &__mail-submission-form {
+            &__input {}
+            &__btn {}
         }
     }
 }
