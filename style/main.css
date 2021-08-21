@@ -30,6 +30,11 @@ a:visited {
   text-decoration: none;
 }
 
+input,
+button {
+  all: unset;
+}
+
 @use "sass:math";
 .container {
   margin: 0 auto;
@@ -66,4 +71,8 @@ a:visited {
     width: 50%;
     height: 100%;
   }
+}
+
+.main .stay-productive__testimonial__display-profile__image {
+  border-radius: 50%;
 }
