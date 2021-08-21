@@ -4,6 +4,9 @@
         &__list {
             &__element {
                 &__link {}
+                &::marker {
+                    content: '';
+                }
             }
         }
     }
