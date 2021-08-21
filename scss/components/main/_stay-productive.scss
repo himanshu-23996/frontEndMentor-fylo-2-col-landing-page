@@ -16,7 +16,9 @@
             &__quote-icon {}
             &__testimonial-content {}
             &__display-profile {
-                &__image {}
+                &__image {
+                    border-radius: 50%;
+                }
                 &__name {}
                 &__designation {}
             }
