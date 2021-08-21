@@ -1,0 +1,16 @@
+.header {
+    // Child Elements
+    &__top-bar {
+        // Setting Display
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // Child Elements
+        &__logo-link {
+            .logo-image {}
+        }
+        &__header-links-holder {
+            &__header-link {}
+        }
+    }
+}
