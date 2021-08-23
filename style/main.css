@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @use "sass:math";
 html {
@@ -22,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  min-width: 320px;
 }
 
 a,
@@ -48,29 +49,93 @@ button {
 }
 
 @use "sass:math";
+.header {
+  padding: 2.8125rem;
+}
+
 .header__top-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.header__top-bar__logo-link {
+  height: 100%;
+  width: 100%;
+}
+
+.header__top-bar__logo-link .logo-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.header__top-bar__header-links-holder__header-link {
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  font-size: clamp(1.5rem, calc(8vw - 3rem), 2rem);
+  font-weight: 300;
 }
 
 .header__hero-section {
   overflow: hidden;
   width: 100%;
   height: 50%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
 }
 
-@media (min-width: 71.875em) {
-  .header__hero-section__image {
-    width: 50%;
-    height: 100%;
-  }
+.header__hero-section__image {
+  margin-top: 12.5rem;
+  max-width: 75%;
+}
+
+.header__hero-section__text {
+  text-align: center;
+}
+
+.header__hero-section__text__title {
+  font-size: clamp(2rem, calc(13.3vw - 4.8rem), 3.5rem);
+}
+
+.header__hero-section__text__description {
+  font-size: clamp(1.5rem, calc( 5.3vw - 1.3rem), 2rem);
+}
+
+.header__hero-section__mail-submission-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1.2rem;
+  width: 100%;
+  font-size: clamp(1.5rem, calc(8vw - 2rem), 3rem);
+}
+
+.header__hero-section__mail-submission-form__input {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.header__hero-section__mail-submission-form__btn {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3065f8;
+  color: white;
+  font-weight: 700;
 }
 
 .main .stay-productive__testimonial__display-profile__image {
