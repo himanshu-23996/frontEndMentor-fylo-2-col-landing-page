@@ -95,20 +95,36 @@ button {
   justify-items: center;
 }
 
-.header__hero-section__image {
-  margin-top: 12.5rem;
-  max-width: 75%;
+.header__hero-section__image-holder {
+  margin: 12.5rem 0 6.25rem 0;
+  width: 100%;
+}
+
+.header__hero-section__image-holder__image {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
 }
 
 .header__hero-section__text {
   text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
 }
 
 .header__hero-section__text__title {
-  font-size: clamp(2rem, calc(13.3vw - 4.8rem), 3.5rem);
+  width: 100%;
+  font-size: clamp(2.2rem, calc(13.3vw - 4.8rem), 3.5rem);
 }
 
 .header__hero-section__text__description {
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+  width: 90%;
   font-size: clamp(1.5rem, calc( 5.3vw - 1.3rem), 2rem);
 }
 
@@ -117,7 +133,7 @@ button {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 1.2rem;
+  grid-gap: 2rem;
   width: 100%;
   font-size: clamp(1.5rem, calc(8vw - 2rem), 3rem);
 }
@@ -125,8 +141,10 @@ button {
 .header__hero-section__mail-submission-form__input {
   border: 1px solid black;
   border-radius: 5px;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 2rem;
   font-family: "Raleway", sans-serif;
+  font-size: clamp(1rem, calc(8vw - 3rem), 3rem);
+  color: rgba(0, 0, 0, 0.295);
 }
 
 .header__hero-section__mail-submission-form__btn {
@@ -135,7 +153,6 @@ button {
   border-radius: 5px;
   background-color: #3065f8;
   color: white;
-  font-weight: 700;
 }
 
 .main .stay-productive__testimonial__display-profile__image {

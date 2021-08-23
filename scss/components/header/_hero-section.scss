@@ -9,16 +9,31 @@
         display: grid;
         justify-content: center;
         justify-items: center;
-        &__image {
-            margin-top: rem(200);
-            max-width: 75%;
+        // grid-gap: rem(30);
+        &__image-holder {
+            margin: rem(200) 0 rem(100) 0;
+            width: 100%;
+            &__image {
+                // margin-top: rem(200);
+                height: 100%;
+                width: 100%;
+                bottom: 0;
+            }
         }
         &__text {
             text-align: center;
+            // display
+            display: grid;
+            justify-content: center;
+            justify-items: center;
             &__title {
-                font-size: clamp(2rem, calc(13.3vw - 4.8rem), 3.5rem);
+                width: 100%;
+                font-size: clamp(2.2rem, calc(13.3vw - 4.8rem), 3.5rem);
             }
             &__description {
+                margin-top: 0rem;
+                margin-bottom: 3rem;
+                width: 90%;
                 font-size: clamp(1.5rem, calc( 5.3vw - 1.3rem), 2rem);
             }
         }
@@ -26,14 +41,16 @@
             // display
             display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 1.2rem;
+            grid-gap: 2rem;
             width: 100%;
             font-size: clamp(1.5rem, calc(8vw - 2rem), 3rem);
             &__input {
                 border: 1px solid black;
                 border-radius: 5px;
-                padding: 1rem 1.5rem;
+                padding: 1.5rem 2rem;
                 font-family: $font-raleway;
+                font-size: clamp(1rem, calc(8vw - 3rem), 3rem);
+                color: rgba(0, 0, 0, 0.295);
             }
             &__btn {
                 text-align: center;
@@ -41,7 +58,7 @@
                 border-radius: 5px;
                 background-color: $bright-blue;
                 color: white;
-                font-weight: 700;
+                // font-weight: 700;
             }
         }
     }
