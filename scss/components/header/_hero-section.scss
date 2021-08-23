@@ -100,7 +100,8 @@
                     // Font Settings
                     font-family: $font-raleway;
                     font-size: clamp(2rem, calc(8vw - 3rem), 2rem);
-                    color: rgba(0, 0, 0, 0.295);
+                    color: $desaturated-blue;
+                    text-align: start;
                     // Media Queries
                     @include breakpoint(large) {
                         // Positioning

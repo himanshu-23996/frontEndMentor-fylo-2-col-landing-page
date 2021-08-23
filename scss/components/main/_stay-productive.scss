@@ -1,26 +1,116 @@
 .main {
+    // &::before {
+    //     content: '';
+    //     // Background
+    //     background-image: url('/images/bg-curve-mobile.svg');
+    //     background-position: top;
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    // }
+    // Itried to use pseudo class selectors to set the top background // &__top-bg 
+    // Positioning
+    padding: unset;
+    // Child ELements
     .stay-productive {
-        &__image {}
+        // Background
+        background-color: #F8F8FE;
+        // Display
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        // Positioning
+        padding-bottom: rem(100);
+        &__image {
+            // Sizing
+            width: 90%;
+            height: 50%;
+            // Padding
+            padding-block: rem(120);
+        }
         &__text {
-            &__title {}
+            // Sub Classes
+            &__title {
+                // Positioning
+                // Font Settings
+                font-size: clamp(rem(40), calc(8vw - 2rem), 3rem);
+                font-family: $font-raleway;
+                font-weight: 700;
+                text-align: center;
+            }
+            //Child Font Settings
+            font-weight: 300;
+            line-height: rem(35);
+            font-size: clamp(0.8rem, calc(0.8vw + 1.3rem), 1.5rem);
+            letter-spacing: rem(1);
             &__description-1 {}
             &__description-2 {}
             &__link-holder {
+                text-align: center;
+                font-size: clamp(0.5rem, calc(0.8vw + 1.5rem), 1.4rem);
                 &__link {
+                    // Child ELements
+                    text-decoration: underline;
+                    color: $moderate-cyan;
                     &__text {}
-                    &__icon {}
+                    &__icon {
+                        height: clamp(0.5rem, calc(0.8vw + 1.5rem), 1.7rem);
+                    }
+                    // Hovering
+                    &:hover {
+                        cursor: pointer;
+                        color: hsl(169, 32%, 55%);
+                    }
                 }
             }
         }
         &__testimonial {
-            &__quote-icon {}
-            &__content {}
+            // Sizing
+            width: min(90%, 500px);
+            // Use a % to px converter
+            // Positioning
+            padding-bottom: 1rem;
+            // Background
+            background-color: white;
+            // Border 
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px 0px $light-gray, -2px -2px 10px 0px $light-gray;
+            &__quote-icon {
+                // Positioning
+                margin-top: 40px;
+            }
+            &__content {
+                // Font Settings
+                font-size: rem(20);
+            }
             &__display-profile {
+                // Display
+                display: flex;
                 &__image {
+                    // Sizing
+                    height: rem(50);
+                    width: rem(50);
+                    // Border
                     border-radius: 50%;
                 }
-                &__name {}
-                &__designation {}
+                &__content {
+                    // Positioning
+                    padding-left: 1rem;
+                    &__name {
+                        // Unsetting Margin
+                        margin-block: unset;
+                        // Positioning
+                        margin-bottom: rem(4);
+                        // Font Settings
+                        font-size: clamp(1.1rem, calc(0.5vw + 0.9rem), 1.3rem);
+                    }
+                    &__designation {
+                        // Unsetting Margin
+                        margin-block: unset;
+                        // Font Settings
+                        font-size: clamp(0.9rem, calc(0.5vw + 0.9rem), 1rem);
+                    }
+                }
             }
         }
     }
