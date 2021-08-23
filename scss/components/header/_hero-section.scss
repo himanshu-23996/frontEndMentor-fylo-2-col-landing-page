@@ -1,64 +1,135 @@
 .header {
     // Child Elements
     &__hero-section {
-        overflow: hidden;
-        // Sizing
-        width: 100%;
-        height: 50%;
-        // display
+        // Display
         display: grid;
         justify-content: center;
         justify-items: center;
-        // grid-gap: rem(30);
+        // Media Queries
+        @include breakpoint(large) {
+            // Display
+            display: grid;
+            justify-content: unset;
+            justify-items: unset;
+            align-content: center;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            // Child Elements
+            &__image-holder {
+                order: 2;
+            }
+            &__text {
+                order: 1;
+            }
+        }
+        // Child Elements
         &__image-holder {
-            margin: rem(200) 0 rem(100) 0;
-            width: 100%;
+            // Positioning
+            margin: rem(100) 0 rem(50) 0;
+            // Child Elements
             &__image {
-                // margin-top: rem(200);
+                // Sizing
                 height: 100%;
                 width: 100%;
-                bottom: 0;
+            }
+            @include breakpoint(large) {
+                padding-left: 2rem;
             }
         }
         &__text {
-            text-align: center;
-            // display
+            // Display
             display: grid;
             justify-content: center;
             justify-items: center;
+            // Child Font Settings
+            text-align: center;
+            // Media Queries
+            @include breakpoint(large) {
+                // Display
+                justify-content: start;
+                justify-items: start;
+                // Child Font Settings
+                text-align: left;
+            }
+            // Child Elements
             &__title {
-                width: 100%;
+                // Font Settings
+                font-family: $font-raleway;
                 font-size: clamp(2.2rem, calc(13.3vw - 4.8rem), 3.5rem);
+                @include breakpoint(large) {
+                    font-size: 2.5rem;
+                }
             }
             &__description {
-                margin-top: 0rem;
-                margin-bottom: 3rem;
+                // Sizing
                 width: 90%;
+                // Positioning
+                margin: 0 0 3rem 0;
+                // Font Settings
                 font-size: clamp(1.5rem, calc( 5.3vw - 1.3rem), 2rem);
+                @include breakpoint(large) {
+                    font-size: 1.2rem;
+                }
             }
-        }
-        &__mail-submission-form {
-            // display
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 2rem;
-            width: 100%;
-            font-size: clamp(1.5rem, calc(8vw - 2rem), 3rem);
-            &__input {
-                border: 1px solid black;
-                border-radius: 5px;
-                padding: 1.5rem 2rem;
-                font-family: $font-raleway;
-                font-size: clamp(1rem, calc(8vw - 3rem), 3rem);
-                color: rgba(0, 0, 0, 0.295);
-            }
-            &__btn {
-                text-align: center;
-                padding: 1rem 1.5rem;
-                border-radius: 5px;
-                background-color: $bright-blue;
-                color: white;
-                // font-weight: 700;
+            &__mail-submission-form {
+                // Sizing
+                width: 100%;
+                // Display
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 2rem;
+                // Child Font Settings
+                font-size: clamp(1.5rem, calc(8vw - 2rem), 3rem);
+                // Media Queries
+                @include breakpoint(large) {
+                    // Sizing
+                    width: 95%;
+                    // Display
+                    grid-template-columns: 1fr 0.5fr;
+                    grid-auto-flow: column;
+                    // Child Font Settings
+                    font-size: 1.5rem;
+                }
+                // Child Elements
+                &__input {
+                    // Border Display
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    // Positioning
+                    padding: 1.5rem 2rem;
+                    // Font Settings
+                    font-family: $font-raleway;
+                    font-size: clamp(2rem, calc(8vw - 3rem), 2rem);
+                    color: rgba(0, 0, 0, 0.295);
+                    // Media Queries
+                    @include breakpoint(large) {
+                        // Positioning
+                        padding: 1rem 1.5rem;
+                        // Font Settings
+                        font-size: 1.5rem;
+                    }
+                }
+                &__btn {
+                    // Border Display
+                    border-radius: 5px;
+                    // Positioning
+                    padding: 1rem 1.5rem;
+                    // Background Display
+                    background-color: $bright-blue;
+                    // Font Settings
+                    color: white;
+                    text-align: center;
+                    // Transition
+                    transition: all ease-in-out 300ms;
+                    &:hover {
+                        background-color: hsl(224, 95%, 75%);
+                        cursor: pointer;
+                    }
+                    @include breakpoint(large) {
+                        // Positioning
+                        padding: 0.5rem 1rem;
+                    }
+                }
             }
         }
     }
