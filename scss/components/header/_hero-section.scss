@@ -37,6 +37,8 @@
             }
         }
         &__text {
+            // Sizing
+            width: 95%;
             // Display
             display: grid;
             justify-content: center;
@@ -66,20 +68,24 @@
                 // Positioning
                 margin: 0 0 3rem 0;
                 // Font Settings
-                font-size: clamp(1.5rem, calc( 5.3vw - 1.3rem), 2rem);
+                font-size: clamp(1.1rem, calc( 5.3vw - 1.3rem), 2rem);
                 @include breakpoint(large) {
                     font-size: 1.2rem;
                 }
             }
             &__mail-submission-form {
                 // Sizing
-                width: 100%;
+                width: 80%;
+                // / \
+                //  |
+                // Even If I change it the page still breaks
                 // Display
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-gap: 2rem;
+                justify-content: center;
                 // Child Font Settings
-                font-size: clamp(1.5rem, calc(8vw - 2rem), 3rem);
+                font-size: clamp(1.2rem, calc(8vw - 2rem), 1.5rem);
                 // Media Queries
                 @include breakpoint(large) {
                     // Sizing
@@ -88,7 +94,7 @@
                     grid-template-columns: 1fr 0.5fr;
                     grid-auto-flow: column;
                     // Child Font Settings
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
                 // Child Elements
                 &__input {

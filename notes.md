@@ -1,4 +1,4 @@
-# Be careful on
+ # Be careful on
 
 - Semantic Tags
   - Two H2s followed by a paragraph, and an h3 in footer
@@ -43,3 +43,11 @@
 - Footer
   - Mobile : Simple Grid layout column based
   - Desktop Grid based
+
+
+
+# Problems
+- Header top bas sizing in mobile mode
+- Header hero section buttong sizing in mobile mode
+- Display Profile in Testimonial sub-section in main section 1
+- Main top curved bg --> Resolved but the curve is not showing properly

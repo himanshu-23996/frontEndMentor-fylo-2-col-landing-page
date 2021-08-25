@@ -1,12 +1,90 @@
 .main {
     .purple-early-access {
+        // Background
+        background-color: $desaturated-blue;
+        // Positioning
+        padding-block: rem(80);
+        // Child Font Settings
+        color: white;
+        text-align: center;
+        // Media Queries
+        @include breakpoint(large) {
+            // Positioning
+            padding: rem(80);
+            // Display
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            grid-gap: 5rem;
+        }
         &__text {
-            &__title {}
-            &__description {}
+            // Child Elements
+            &__title {
+                // Font Settings
+                font-size: clamp(1.5rem, calc(2.3vw + 1rem), 3rem);
+                font-family: $font-raleway;
+            }
+            &__description {
+                // Positioning
+                margin-block: 5%;
+                // Font Settings
+                font-size: clamp(1rem, calc(2.3vw + 0.5rem), 1.2rem);
+            }
+            // Media Queries
+            @include breakpoint(large) {
+                text-align: left;
+            }
         }
         &__mail-submission-form {
-            &__input {}
-            &__btn {}
+            // Display
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            @include breakpoint(large) {
+                // Display
+                align-items: flex-start;
+            }
+            &__input {
+                // Sizing
+                width: 90%;
+                // Background
+                background-color: white;
+                // Border
+                border: 1px solid black;
+                border-radius: 3px;
+                // Positioning
+                padding: 1rem;
+                // Font Settings
+                font-size: 1.5rem;
+                color: $light-gray;
+                text-align: left;
+            }
+            &__btn {
+                // Sizing
+                width: 90%;
+                // Background
+                background-color: $bright-blue;
+                // Border
+                border-radius: 3px;
+                // Font Settings
+                font-weight: 700;
+                // Positioning
+                padding: 1rem;
+                // Font Settings
+                font-size: 1.5rem;
+                // Transitions
+                transition: all ease-in-out 300ms;
+                &:hover {
+                    background-color: hsl(224, 95%, 75%);
+                    cursor: pointer;
+                }
+                // Media Queries
+                @include breakpoint(large) {
+                    // Sizing
+                    width: 50%;
+                }
+            }
         }
     }
 }
