@@ -2,3 +2,12 @@
 @import './contact';
 @import './navbars';
 @import './social-icons';
+.footer {
+    // Background
+    background-color: $very-dark-blue;
+    // Positioning
+    padding-block: rem(70);
+    padding-inline: rem(40);
+    // Font Settings
+    color: white;
+}

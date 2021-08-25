@@ -1,3 +1,19 @@
 .footer {
-    &__logo {}
+    &__logo {
+        &__svg {
+            g {
+                path {
+                    fill: #FFF;
+                }
+                g {
+                    mask {
+                        fill: #FFF;
+                    }
+                    path {
+                        fill: #FFF;
+                    }
+                }
+            }
+        }
+    }
 }

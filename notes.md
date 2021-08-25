@@ -51,3 +51,5 @@
 - Header hero section buttong sizing in mobile mode --> Fixed
 - Display Profile in Testimonial sub-section in main section 1  --> Fixed
 - Main top curved bg --> Background Color in the main sec-1 overlaps the top bg
+- Footer social icons bordering issue and border color change on hovering
+- 

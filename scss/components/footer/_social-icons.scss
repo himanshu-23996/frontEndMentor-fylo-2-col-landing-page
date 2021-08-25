@@ -1,5 +1,27 @@
 .footer {
     &__social-icons {
-        i {}
+        // Display
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        // Font Settings
+        font-size: 1.5rem;
+        // Child ELements
+        a {
+            // Border
+            border: 1px solid white;
+            border-radius: 50%;
+            padding-inline: 10px;
+            padding-block: 5px;
+            // Child Elements
+            i {}
+            // Hovering Effects
+            transition: all ease-in-out 300ms;
+            &:hover {
+                cursor: pointer;
+                border: 1px solid $bright-blue;
+                color: $bright-blue;
+            }
+        }
     }
 }

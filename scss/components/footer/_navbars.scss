@@ -2,8 +2,24 @@
     &__navbar-1,
     &__navbar-2 {
         &__list {
+            // Positioning
+            margin-bottom: rem(40);
+            padding-inline: unset;
+            // Display
+            display: flex;
+            flex-direction: column;
+            gap: rem(10);
+            // Child ELements
             &__element {
-                &__link {}
+                // Child Elemntes
+                &__link {
+                    // Hovering Effects
+                    transition: all ease-in-out 300ms;
+                    &:hover {
+                        cursor: pointer;
+                        color: $bright-blue;
+                    }
+                }
                 &::marker {
                     content: '';
                 }

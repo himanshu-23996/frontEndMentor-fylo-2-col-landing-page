@@ -540,6 +540,96 @@ button {
   }
 }
 
+.footer__logo__svg g path {
+  fill: #FFF;
+}
+
+.footer__logo__svg g g mask {
+  fill: #FFF;
+}
+
+.footer__logo__svg g g path {
+  fill: #FFF;
+}
+
+.footer__contact {
+  padding-block: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.625rem;
+}
+
+.footer__contact__number, .footer__contact__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+
+.footer__navbar-1__list, .footer__navbar-2__list {
+  margin-bottom: 2.5rem;
+  padding-inline: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.625rem;
+}
+
+.footer__navbar-1__list__element__link, .footer__navbar-2__list__element__link {
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.footer__navbar-1__list__element__link:hover, .footer__navbar-2__list__element__link:hover {
+  cursor: pointer;
+  color: #3065f8;
+}
+
 .footer__navbar-1__list__element::marker, .footer__navbar-2__list__element::marker {
   content: '';
+}
+
+.footer__social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.footer__social-icons a {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding-inline: 10px;
+  padding-block: 5px;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.footer__social-icons a:hover {
+  cursor: pointer;
+  border: 1px solid #3065f8;
+  color: #3065f8;
+}
+
+.footer {
+  background-color: #070439;
+  padding-block: 4.375rem;
+  padding-inline: 2.5rem;
+  color: white;
 }

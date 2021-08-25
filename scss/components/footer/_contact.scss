@@ -1,7 +1,17 @@
 .footer {
     &__contact {
+        // Positioning
+        padding-block: rem(40);
+        // Display
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
         &__number,
         &__mail {
+            // Dispaly
+            display: flex;
+            align-items: center;
+            gap: rem(20);
             &__icon,
             &__text {}
         }
