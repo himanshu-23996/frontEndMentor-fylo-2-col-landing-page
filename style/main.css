@@ -314,7 +314,7 @@ button {
   position: absolute;
   left: 0rem;
   top: -100px;
-  background: url("/images/bg-curve-mobile.svg");
+  background: url(/images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -328,7 +328,7 @@ button {
     position: absolute;
     left: 0rem;
     top: -6.25rem;
-    background: url("/images/bg-curve-desktop.svg");
+    background: url(/images/bg-curve-desktop.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
