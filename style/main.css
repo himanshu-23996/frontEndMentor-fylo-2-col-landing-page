@@ -50,7 +50,7 @@ button {
 
 @use "sass:math";
 .header {
-  padding: 2.8125rem;
+  padding-block: 2.8125rem;
 }
 
 .header__top-bar {
@@ -415,7 +415,8 @@ button {
 }
 
 .main .stay-productive__text__testimonial__content {
-  font-size: clamp(0.5rem, calc(2.3vw + 0.5rem), 0.9rem);
+  font-size: clamp(0.5rem, calc(2.3vw + 0.5rem), 0.8rem);
+  line-height: 0.875rem;
 }
 
 .main .stay-productive__text__testimonial__display-profile {
