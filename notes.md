@@ -47,7 +47,7 @@
 
 
 # Problems
-- Header top bas sizing in mobile mode
-- Header hero section buttong sizing in mobile mode
-- Display Profile in Testimonial sub-section in main section 1
-- Main top curved bg --> Resolved but the curve is not showing properly
+- Header top bar sizing in mobile mode --> Fixed
+- Header hero section buttong sizing in mobile mode --> Fixed
+- Display Profile in Testimonial sub-section in main section 1  --> Fixed
+- Main top curved bg --> Background Color in the main sec-1 overlaps the top bg

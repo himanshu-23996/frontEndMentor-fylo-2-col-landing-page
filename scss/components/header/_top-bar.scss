@@ -9,35 +9,39 @@
         align-items: center;
         // Child Elements
         &__logo-link {
-            height: 24px;
-            // width: 80px;
-            width: clamp(80px, auto, 160px);
+            // Sizing
+            width: 100px;
+            @include breakpoint(medium) {
+                // Sizing
+                width: 150px;
+            }
             .logo-image {
-                // height: 100%;
-                // width: clamp(100px, calc(8vw - 4rem), 200px);
                 max-width: 100%;
-                height: auto;
             }
         }
         &__header-links-holder {
             // Sizing
-            width: 15%;
-            @include breakpoint(large) {
-                width: 35%;
+            width: 60%;
+            @include breakpoint(medium) {
+                width: 40%;
             }
             //Display
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
             // Sizing
             &__header-link {
-                // Positioning
-                padding-right: 2rem;
+                &:not(:last-child) {
+                    // Positioning
+                    padding-right: 10%;
+                }
                 // Font Settings
-                font-size: clamp(rem(16), calc(8vw - 3rem), 1.5rem);
+                font-size: clamp(0.8rem, calc(8vw - 3rem), 1.2rem);
                 font-weight: 300;
                 // Child Elements
-                a {}
+                a {
+                    min-width: 8ch;
+                }
             }
         }
     }
