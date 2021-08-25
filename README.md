@@ -17,6 +17,6 @@
 - Accebility issues
 - ARIA mdn implementation in HTML
 - Do something about the social links in footer, they always create a problem
-  - Their border ring , currently I do it by bordering them by bordering the a tag and then adjusting the padding accordingly as per each icon
+  - Their border ring , currently I do it by bordering a tag and then adjusting the padding accordingly as per each icon
   - And if i place the "a" tag inside the "i" tag then I am unable to give it the ring
   - Either learn to edit those SVGs or find a generic way to tackle all the icons at once
