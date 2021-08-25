@@ -44,12 +44,6 @@ button {
   padding: 0 1.25rem;
 }
 
-@media (min-width: 71.875em) {
-  .container {
-    width: 80.3125rem;
-  }
-}
-
 @use "sass:math";
 .header {
   padding-top: 2.8125rem;
