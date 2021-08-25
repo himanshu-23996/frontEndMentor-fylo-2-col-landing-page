@@ -3,25 +3,40 @@
     padding: unset;
     // Child ELements
     .stay-productive {
-        // Background
-        background: url('/images/bg-curve-mobile.svg');
-        background-repeat: no-repeat;
-        background-position: top;
-        // background-size: cover;
-        // background-color: #F8F8FE;   
-        @include breakpoint(large) {
+        // Top Curved Background
+        position: relative;
+        &::before {
+            content: "";
+            // Sizing
+            width: 100%;
+            height: rem(100);
+            // Positioning
+            position: absolute;
+            left: rem(0);
+            top: -100px;
             // Background
-            background: url('/images/bg-curve-desktop.svg');
+            background: url('/images/bg-curve-mobile.svg');
             background-repeat: no-repeat;
             background-position: top;
-            // background-size: cover;
-            // background-color: #F8F8FE;
-            // Why do I have to re-write this properties inside my media query?
-            // background-repeat: no-repeat;
-            // background-position: top;
-            // background-size: cover;
-            // background-color: #F8F8FE;
+            background-size: cover;
+            @include breakpoint(medium) {
+                content: "";
+                // Sizing
+                width: 100%;
+                height: rem(100);
+                // Positioning
+                position: absolute;
+                left: rem(0);
+                top: -(rem(100));
+                // Background
+                background: url('/images/bg-curve-desktop.svg');
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: cover;
+            }
         }
+        // Background
+        background-color: #F8F8FE;
         // Display
         display: flex;
         flex-direction: column;
@@ -29,7 +44,7 @@
         align-items: center;
         // Positioning
         padding-bottom: rem(100);
-        padding-top: rem(150);
+        margin-top: rem(150);
         // Media Queries
         @include breakpoint(large) {
             // Display
@@ -43,7 +58,8 @@
             width: 100%;
             height: 60%;
             // Padding
-            padding-block: rem(100);
+            padding-bottom: rem(100);
+            padding-top: rem(20);
             // Media Queries
             @include breakpoint(large) {
                 // Sizing
@@ -92,8 +108,6 @@
                     // Sizing
                     width: 60%;
                     margin-left: 20%;
-                    //Font Setings
-                    font-size: 1.5rem;
                 }
                 @include breakpoint(large) {
                     // Sizing
@@ -113,9 +127,15 @@
                 margin-bottom: 3em;
             }
             &__link-holder {
+                // Font Settings
                 text-align: center;
-                font-size: clamp(0.5rem, calc(0.8vw + 1.5rem), 1.05rem);
+                font-size: 0.8rem;
+                @include breakpoint(medium) {
+                    // Font Settings
+                    font-size: 1.2rem;
+                }
                 @include breakpoint(large) {
+                    // Font Settings
                     text-align: left;
                 }
                 &__link {
