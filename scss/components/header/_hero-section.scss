@@ -57,18 +57,20 @@
             &__title {
                 // Font Settings
                 font-family: $font-raleway;
-                font-size: clamp(2.2rem, calc(13.3vw - 4.8rem), 3.5rem);
+                font-size: clamp(1.5rem, calc(13.3vw - 4.8rem), 2.5rem);
                 @include breakpoint(large) {
                     font-size: 2.5rem;
+                    // Font Settings
+                    line-height: 4rem;
                 }
             }
             &__description {
                 // Sizing
                 width: 90%;
                 // Positioning
-                margin: 0 0 3rem 0;
+                margin: 1.5rem 0 3rem 0;
                 // Font Settings
-                font-size: clamp(1.1rem, calc( 5.3vw - 1.3rem), 2rem);
+                font-size: clamp(1rem, calc( 5.3vw - 1.3rem), 1.5rem);
                 @include breakpoint(large) {
                     font-size: 1.2rem;
                 }
@@ -105,7 +107,7 @@
                     padding: 1rem 1.5rem;
                     // Font Settings
                     font-family: $font-raleway;
-                    font-size: clamp(1.2rem, calc(8vw - 3rem), 2rem);
+                    font-size: 1.2rem;
                     color: $desaturated-blue;
                     text-align: start;
                     // Media Queries

@@ -4,13 +4,23 @@
         display: flex;
         justify-content: center;
         gap: 1.5rem;
+        @include breakpoint(large) {
+            grid-area: social;
+        }
         // Font Settings
         font-size: 1.5rem;
         // Child ELements
-        a {
+        &__link {
+            @include breakpoint(large) {
+                // Positioning
+                align-items: flex-start;
+                align-self: start;
+                margin-top: rem(40);
+            }
             // Border
             border: 1px solid white;
             border-radius: 50%;
+            // Positioning
             padding-inline: 10px;
             padding-block: 5px;
             // Child Elements
@@ -23,5 +33,11 @@
                 color: $bright-blue;
             }
         }
+        .fb {
+            // Positioning
+            padding-inline: 14px;
+        }
+        .twt {}
+        .insta {}
     }
 }

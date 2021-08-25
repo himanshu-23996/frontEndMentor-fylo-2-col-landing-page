@@ -1,5 +1,10 @@
 .footer {
     &__logo {
+        // Display
+        @include breakpoint(large) {
+            grid-area: logo;
+        }
+        // Child Elements
         &__svg {
             g {
                 path {

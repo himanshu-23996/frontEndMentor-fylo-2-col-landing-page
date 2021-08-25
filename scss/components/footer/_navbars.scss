@@ -1,6 +1,22 @@
 .footer {
+    &__navbar-1 {
+        // Display
+        @include breakpoint(large) {
+            grid-area: nav-1;
+        }
+    }
+    &__navbar-2 {
+        // Display
+        @include breakpoint(large) {
+            grid-area: nav-2;
+        }
+    }
     &__navbar-1,
     &__navbar-2 {
+        // Responsive Positioning
+        @include breakpoint(large) {
+            margin-top: rem(40);
+        }
         &__list {
             // Positioning
             margin-bottom: rem(40);
@@ -23,6 +39,10 @@
                 &::marker {
                     content: '';
                 }
+            }
+            // Responsive Positioning
+            @include breakpoint(large) {
+                margin: unset;
             }
         }
     }

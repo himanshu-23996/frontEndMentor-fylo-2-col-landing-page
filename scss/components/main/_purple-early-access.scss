@@ -23,6 +23,7 @@
                 // Font Settings
                 font-size: clamp(1.5rem, calc(2.3vw + 1rem), 3rem);
                 font-family: $font-raleway;
+                margin-block: 2rem;
             }
             &__description {
                 // Positioning

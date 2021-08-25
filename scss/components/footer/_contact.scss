@@ -1,5 +1,9 @@
 .footer {
     &__contact {
+        // Display
+        @include breakpoint(large) {
+            grid-area: contacts;
+        }
         // Positioning
         padding-block: rem(40);
         // Display

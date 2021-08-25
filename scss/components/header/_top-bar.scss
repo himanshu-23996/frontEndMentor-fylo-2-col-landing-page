@@ -36,8 +36,11 @@
                     padding-right: 10%;
                 }
                 // Font Settings
-                font-size: clamp(0.8rem, calc(8vw - 3rem), 1.2rem);
+                font-size: clamp(0.8rem, calc(2.5vw + 0.2rem), 1.2rem);
                 font-weight: 300;
+                @include breakpoint(medium) {
+                    font-size: 1.5rem;
+                }
                 // Child Elements
                 a {
                     min-width: 8ch;
