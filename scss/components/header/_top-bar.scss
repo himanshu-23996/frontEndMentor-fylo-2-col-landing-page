@@ -18,13 +18,16 @@
             }
             .logo-image {
                 max-width: 100%;
+            } // Hover Effect
+            &:hover {
+                cursor: pointer;
             }
         }
         &__header-links-holder {
             // Sizing
             width: 60%;
             @include breakpoint(medium) {
-                width: 40%;
+                width: 30%;
             }
             //Display
             display: flex;
@@ -45,6 +48,10 @@
                 // Child Elements
                 a {
                     min-width: 8ch;
+                }
+                // Hover Effect
+                &:hover {
+                    cursor: pointer;
                 }
             }
         }
